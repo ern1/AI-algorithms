@@ -54,8 +54,8 @@ class Location:
         self.x = x
         self.y = y
 
-    def distanceTo(self, locTo):
-        return math.sqrt(math.pow(locTo.x - self.x, 2) + math.pow(locTo.y - self.y, 2))
+    def distanceTo(self, location_to):
+        return math.sqrt(math.pow(location_to.x - self.x, 2) + math.pow(location_to.y - self.y, 2))
 
 def initializePopulation(population, size, locations):
     for _ in range(size):
